@@ -7,7 +7,7 @@ read  connectedDB
 		print You are now connected to $connectedDB database
 	        cd $connectedDB
 		PS3="Enter your choice  "
-		select choice in "Create table" "List tables" "Drop table" "Insert into table" "select from table" "Delete from table" "Update table"
+		select choice in "Create table" "List tables" "Drop table" "Insert into table" "select from table"
 		do
         	case $REPLY in
                 1) source ../create.sh
@@ -26,13 +26,7 @@ read  connectedDB
 		 source ../select.sh
 
 			;;
-		6)
-
-			;;
-
-		7)
-
-			;;
+		
         esac
 done
 		
